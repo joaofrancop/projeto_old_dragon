@@ -57,4 +57,5 @@ projeto_old_dragon/
 
 -----
 
-**Autor**: João Franco P.
+**Autor**: João Franco Pinheiro
+

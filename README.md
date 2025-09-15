@@ -7,11 +7,11 @@ A aplicação foi desenvolvida seguindo o princípio da **arquitetura MVC (Model
 ## 🚀 Funcionalidades
 
   * **Geração de Atributos**: Suporte aos três estilos de criação de personagem do manual:
-      * [cite\_start]**Clássico**: Rola 3d6 para cada atributo em uma ordem fixa[cite: 445].
-      * [cite\_start]**Aventureiro**: Rola 3d6 seis vezes e permite ao usuário distribuir os valores livremente[cite: 450].
-      * [cite\_start]**Heróico**: Rola 4d6 (descartando o menor) seis vezes e permite a distribuição livre[cite: 454].
-  * [cite\_start]**Seleção de Raças**: Escolha entre Humano, Elfo, Anão e Halfling[cite: 529]. [cite\_start]Cada raça possui características e habilidades únicas, como movimento, infravisão e bônus raciais[cite: 528].
-  * [cite\_start]**Seleção de Classes**: Escolha entre Guerreiro, Clérigo, Ladrão e Mago[cite: 293]. [cite\_start]Cada classe define as proficiências em armas e armaduras, além de habilidades de classe[cite: 815, 816].
+      * **Clássico**: Rola 3d6 para cada atributo em uma ordem fixa[cite: 445].
+      * **Aventureiro**: Rola 3d6 seis vezes e permite ao usuário distribuir os valores livremente[cite: 450].
+      * **Heróico**: Rola 4d6 (descartando o menor) seis vezes e permite a distribuição livre[cite: 454].
+  * **Seleção de Raças**: Escolha entre Humano, Elfo, Anão e Halfling[cite: 529]. [cite\_start]Cada raça possui características e habilidades únicas, como movimento, infravisão e bônus raciais[cite: 528].
+  * **Seleção de Classes**: Escolha entre Guerreiro, Clérigo, Ladrão e Mago[cite: 293]. [cite\_start]Cada classe define as proficiências em armas e armaduras, além de habilidades de classe[cite: 815, 816].
   * **Interface Web Dinâmica**: O front-end, construído com HTML, CSS e JavaScript, interage com o back-end via requisições HTTP para criar uma experiência de usuário fluida, especialmente nos modos de distribuição de atributos livres.
 
 ## 📂 Arquitetura do Projeto

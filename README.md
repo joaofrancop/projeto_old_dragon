@@ -1,8 +1,3 @@
-Com certeza. Um arquivo README.md é essencial para qualquer projeto no GitHub. Ele serve como a página de entrada do seu repositório, explicando o que o projeto faz, como usá-lo e as tecnologias envolvidas.
-
-Aqui está um README.md que você pode copiar e colar no seu projeto. Ele cobre todos os pontos importantes para a defesa do seu trabalho.
-
-README.md
 🐉 Criador de Personagem Old Dragon
 Este projeto é uma aplicação web para a criação de personagens do RPG Old Dragon, implementada em Python. A ferramenta permite aos usuários gerar personagens de nível 1, escolhendo entre as raças e classes básicas e selecionando um dos três estilos de distribuição de atributos.
 
@@ -55,12 +50,8 @@ Clone o repositório para sua máquina local.
 
 Instale as dependências do projeto (a única necessária é o Flask):
 
-Bash
-
 pip install Flask
 Execute a aplicação a partir do diretório raiz do projeto:
-
-Bash
 
 python run.py
 Acesse o site no seu navegador pelo endereço que o servidor Flask fornecer (geralmente http://127.0.0.1:5000).

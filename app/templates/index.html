@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Personagem Old Dragon</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=IM+Fell+English&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Criador de Personagem Old Dragon</h1>
+
+    <div id="selecao">
+        <p>Escolha a raça, a classe e o estilo de geração de atributos do seu personagem.</p>
+
+        <label for="raca_select">Raça:</label>
+        <select id="raca_select">
+            {% for key, raca in racas.items() %}
+                <option value="{{ key }}">{{ raca.nome }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        
+        <label for="classe_select">Classe:</label>
+        <select id="classe_select">
+            {% for key, classe in classes.items() %}
+                <option value="{{ key }}">{{ classe.nome }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+
+        <label for="estilo_select">Estilo de Atributos:</label>
+        <select id="estilo_select">
+            <option value="classico">Clássico</option>
+            <option value="aventureiro">Aventureiro</option>
+            <option value="heroico">Heróico</option>
+        </select>
+        <br><br>
+
+        <button onclick="iniciarGeracao()">Gerar Personagem</button>
+    </div>
+
+    <div id="distribuicao-livre" style="display:none;">
+        <h2>Distribuição de Atributos</h2>
+        <p>Valores rolados: <span id="resultados-rolagem"></span></p>
+        <p>Distribua-os nos atributos abaixo:</p>
+        
+        <div class="attribute-list">
+            <div class="attribute-item">
+                <label for="forca_select">Força:</label>
+                <select id="forca_select" onchange="atualizarSelects()"></select>
+            </div>
+            <div class="attribute-item">
+                <label for="destreza_select">Destreza:</label>
+                <select id="destreza_select" onchange="atualizarSelects()"></select>
+            </div>
+            <div class="attribute-item">
+                <label for="constituicao_select">Constituição:</label>
+                <select id="constituicao_select" onchange="atualizarSelects()"></select>
+            </div>
+            <div class="attribute-item">
+                <label for="inteligencia_select">Inteligência:</label>
+                <select id="inteligencia_select" onchange="atualizarSelects()"></select>
+            </div>
+            <div class="attribute-item">
+                <label for="sabedoria_select">Sabedoria:</label>
+                <select id="sabedoria_select" onchange="atualizarSelects()"></select>
+            </div>
+            <div class="attribute-item">
+                <label for="carisma_select">Carisma:</label>
+                <select id="carisma_select" onchange="atualizarSelects()"></select>
+            </div>
+        </div>
+        
+        <button id="btn-distribuir" onclick="distribuirAtributos()" disabled>Finalizar Personagem</button>
+        <p id="feedback-erro" class="error" style="display:none;"></p>
+    </div>
+
+    <div id="ficha-personagem" style="display:none;">
+        <div id="ficha-conteudo"></div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,3 +1,5 @@
+# model/classe.py
+
 class Classe:
     """Classe base para todas as classes de personagem."""
     def __init__(self):
@@ -9,18 +11,17 @@ class Classe:
         self.proficiencias = []
         self.habilidades = []
 
-    def descrever_classe(self):
-        """Descreve as principais características da classe."""
-        desc = [
-            f"Nome: {self.nome}",
-            f"PV Inicial: {self.pv_inicial} + modificador de CON",
-            f"Dado de Vida (pós 1º nível): 1d{self.dado_vida}",
-            f"Base de Ataque (1º nível): {self.ba}",
-            f"Jogada de Proteção (1º nível): {self.jp_inicial}",
-            f"Proficiências: {', '.join(self.proficiencias)}",
-            f"Habilidades: {', '.join(self.habilidades)}"
-        ]
-        return "\n".join(desc)
+    def to_dict(self):
+        """Converte a classe para um dicionário."""
+        return {
+            "nome": self.nome,
+            "pv_inicial": self.pv_inicial,
+            "dado_vida": self.dado_vida,
+            "ba": self.ba,
+            "jp_inicial": self.jp_inicial,
+            "proficiencias": self.proficiencias,
+            "habilidades": self.habilidades
+        }
 
 
 class Guerreiro(Classe):

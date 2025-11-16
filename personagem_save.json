@@ -1,0 +1,37 @@
+{
+    "raca": {
+        "nome": "Halfling",
+        "movimento": 6,
+        "infravisao": "Não",
+        "alinhamento": "Tendência à neutralidade",
+        "habilidades": [
+            "Furtivos: Consegue se esconder com 1-2 em 1d6.",
+            "Destemidos: Bônus de +1 em qualquer teste de JPS.",
+            "Bons de Mira: Ataques à distância com armas de arremesso são fáceis.",
+            "Pequenos: Ataques de criaturas grandes ou maiores são difíceis de acertar.",
+            "Restrições: Apenas armaduras de couro e armas pequenas ou médias. Armas médias precisam de duas mãos."
+        ]
+    },
+    "classe": {
+        "nome": "Clérigo",
+        "pv_inicial": 8,
+        "dado_vida": 8,
+        "ba": 1,
+        "jp_inicial": 5,
+        "proficiencias": [
+            "Armas Impactantes",
+            "Todas as Armaduras"
+        ],
+        "habilidades": [
+            "Magias Divinas",
+            "Afastar Mortos-Vivos",
+            "Cura Milagrosa"
+        ]
+    },
+    "forca": 11,
+    "destreza": 12,
+    "constituicao": 11,
+    "inteligencia": 10,
+    "sabedoria": 8,
+    "carisma": 4
+}
